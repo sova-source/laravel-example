@@ -12,7 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-image: url("{{asset('images/main.jpg')}}");
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -68,35 +68,36 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+                        @if(Auth::user()->isDisabled())
+                            <a href="{{ url('/') }}">Главная</a>
+                        @elseif(Auth::user()->isUser())
+                            <a href="{{ url('/user/index') }}">Кабинет</a>
+                            <a href="{{ url('/') }}">Главная</a>
+                        @elseif(Auth::user()->isVisitor())
+                            <a href="{{ url('/') }}">Главная</a>
+                        @elseif(Auth::user()->isAdministrator())
+                            <a href="{{ url('/admin/index') }}">Панель администратора</a>
+                            <a href="{{ url('/') }}">Главная</a>
+                        @endif
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                        <a class = "dropdown-item" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                            Выйти</a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="post">
+                            @csrf
+                        </form>
+
+                        @else
+                            <a href="{{ route('login') }}">Войти</a>
+                        @if(Route::has('register'))
+                            <a href="{{ route('register') }}">Регистрация</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel @php
-                        $p = \App\SBlog\Core\BlogApp::get_instance()->getProperty('admin_email');
-                        dd($p);
-                         @endphp
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">Новости</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>

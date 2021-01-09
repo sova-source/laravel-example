@@ -101,6 +101,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/fomvasss/laravel-meta-tags" />
     </include_path>
   </component>
   <component name="ProjectId" id="1llNOkB5jPpzTSxOyO77k8QgA5j" />
@@ -116,7 +117,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -129,6 +130,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\example-app\resources\views\layouts" />
+      <recent name="C:\OSPanel\domains\example-app\public" />
+      <recent name="C:\OSPanel\domains\example-app\public\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\example-app\app\Models" />
     </key>
@@ -148,7 +154,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608167688919</updated>
       <workItem from="1608167698785" duration="28501000" />
-      <workItem from="1608610189924" duration="19194000" />
+      <workItem from="1608610189924" duration="23678000" />
+      <workItem from="1610049866780" duration="25547000" />
     </task>
     <servers />
   </component>

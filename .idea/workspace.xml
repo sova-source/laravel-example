@@ -126,6 +126,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -155,7 +156,7 @@
       <updated>1608167688919</updated>
       <workItem from="1608167698785" duration="28501000" />
       <workItem from="1608610189924" duration="23678000" />
-      <workItem from="1610049866780" duration="25547000" />
+      <workItem from="1610049866780" duration="55569000" />
     </task>
     <servers />
   </component>

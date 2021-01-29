@@ -102,6 +102,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/fomvasss/laravel-meta-tags" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
     </include_path>
   </component>
   <component name="ProjectId" id="1llNOkB5jPpzTSxOyO77k8QgA5j" />
@@ -156,7 +157,9 @@
       <updated>1608167688919</updated>
       <workItem from="1608167698785" duration="28501000" />
       <workItem from="1608610189924" duration="23678000" />
-      <workItem from="1610049866780" duration="55569000" />
+      <workItem from="1610049866780" duration="69315000" />
+      <workItem from="1610784631735" duration="22125000" />
+      <workItem from="1611048650503" duration="1957000" />
     </task>
     <servers />
   </component>
